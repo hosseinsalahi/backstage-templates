@@ -23,12 +23,10 @@ spec:
         cluster:
           type: string
           enum:
-            - development
-            - production
+            - colima
           ui:autocomplete:
             options:
-              - development
-              - production
+              - colima
   steps:
     - action: kube:apply
       id: k-apply
