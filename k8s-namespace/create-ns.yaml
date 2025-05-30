@@ -23,10 +23,10 @@ spec:
         cluster:
           type: string
           enum:
-            - colima
+            - demo
           ui:autocomplete:
             options:
-              - colima
+              - demo
   steps:
     - action: kube:apply
       id: k-apply
