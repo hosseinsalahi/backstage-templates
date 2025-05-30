@@ -1,8 +1,6 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  annotations:
-    backstage.io/kubernetes-id: demo
   description: Create a Namespace in Kubernetes
   name: create-namespace
   title: Create a Namespace
