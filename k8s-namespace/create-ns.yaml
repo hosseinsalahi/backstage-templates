@@ -9,7 +9,7 @@ metadata:
 spec:
   lifecycle: experimental
   owner: user
-  type: example
+  type: service
   parameters:
     - properties:
         name:
