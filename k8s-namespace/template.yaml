@@ -6,7 +6,7 @@ metadata:
   title: Create a Namespace
 spec:
   lifecycle: experimental
-  owner: user:guest
+  owner: guests
   type: service
   parameters:
     - properties:
