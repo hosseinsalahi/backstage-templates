@@ -27,6 +27,17 @@ spec:
           ui:autocomplete:
             options:
               - demo
+    - title: Repository Information
+      required:
+        - repoUrl
+      properties:
+        repoUrl:
+          title: Repository Location
+          type: string
+          ui:field: RepoUrlPicker
+          ui:options:
+            allowedHosts:
+              - github.com
   steps:
     - id: template
       name: Fetch Skeleton + Template
@@ -35,6 +46,14 @@ spec:
         url: ./template
         values:
           name: ${{ parameters.name }}
+    - id: publish
+      name: Publish
+      action: publish:github
+      input:
+        allowedHosts: ["github.com"]
+        description: This is ${{ parameters.name }}
+        repoUrl: ${{ parameters.repoUrl }}
+        defaultBranch: main
     - action: kube:apply
       id: k-apply
       name: Create a Resouce
