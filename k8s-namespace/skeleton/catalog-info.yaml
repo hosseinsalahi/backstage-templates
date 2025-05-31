@@ -2,8 +2,8 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: ${{ values.name | dump }}
-  description: ${{ values.description | dump }}
+  description: This k8s namespace
 spec:
   type: service
   lifecycle: experimental
-  owner: ${{ values.owner | dump}}
+  owner: guests
