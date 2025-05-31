@@ -3,6 +3,8 @@ kind: Component
 metadata:
   name: ${{ values.name | dump }}
   description: This k8s namespace
+  annotations:
+    backstage.io/kubernetes-id: demo
 spec:
   type: service
   lifecycle: experimental
