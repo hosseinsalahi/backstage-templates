@@ -50,6 +50,6 @@ spec:
       name: Register
       action: catalog:register
       input:
-        catalogInfoPath: "/catalog-info.yaml"
+        catalogInfoPath: '/catalog-info.yaml'
   output:
     entityRef: ${{ steps.register.output.entityRef }}
