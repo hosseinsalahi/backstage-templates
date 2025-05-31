@@ -60,7 +60,11 @@ spec:
       input:
         namespaced: false
         clusterName: ${{ parameters.cluster }}
-        path: "manifests"
+        manifest: | 
+          apiVersion: v1
+          kind: Namespace
+          metadata:
+            name: ${{ parameters.name }}
     - id: register
       name: Register
       action: catalog:register
