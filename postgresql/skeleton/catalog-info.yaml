@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ${{ values.name | dump }}
+  description: PSQL instnace
+  annotations:
+    backstage.io/kubernetes-id: demo
+spec:
+  type: service
+  lifecycle: experimental
+  owner: guests

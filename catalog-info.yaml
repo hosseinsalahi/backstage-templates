@@ -6,3 +6,4 @@ metadata:
 spec:
   targets:
     - ./k8s-namespace/template.yaml
+    - ./postgresql/template.yaml
