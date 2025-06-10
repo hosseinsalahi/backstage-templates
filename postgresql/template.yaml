@@ -65,9 +65,9 @@ spec:
           kind: postgresql
           metadata:
             name: ${{ parameters.name }}
-            namespace: team-a
+            namespace: default
           spec:
-           teamId: "team-a"
+           teamId: "demo"
     - id: register
       name: Register
       action: catalog:register
