@@ -1,7 +1,8 @@
 apiVersion: marketplace.kratix.io/v1alpha2
 kind: postgresql
 metadata:
-  name: clc-psql
+  name: ${{ parameters.name }}
   namespace: clc-demo
 spec:
-  teamId: "team-a"
+  teamId: ${{ parameters.name }}
+  namespace: clc-demo
