@@ -1,7 +1,7 @@
 apiVersion: marketplace.kratix.io/v1alpha2
 kind: postgresql
 metadata:
-  name: example
-  namespace: default
+  name: clc-psql
+  namespace: clc-demo
 spec:
   teamId: "team-a"
